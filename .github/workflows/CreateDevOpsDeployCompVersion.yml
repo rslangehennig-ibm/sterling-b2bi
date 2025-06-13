@@ -19,6 +19,9 @@ jobs:
         sparse-checkout: |
           README.md
         sparse-checkout-cone-mode: false
+    - name: Stage files
+      id: create-artifacts
+      run: ls -al && mkdir /tmp/artifacts
     - name: Create Component Version
       uses: HCL-TECH-SOFTWARE/devops-deploy-createcomponentversion-action@v2.0
       with:
