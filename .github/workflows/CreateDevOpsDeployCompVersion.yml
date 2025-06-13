@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         sparse-checkout: |
-          README.md
+          /config/business-processes/randy.bpml
         sparse-checkout-cone-mode: false
     - name: Stage files
       id: create-artifacts
