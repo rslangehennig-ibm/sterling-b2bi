@@ -2,6 +2,7 @@
   <sequence name="MainSequence">
     <operation name="SampleOperation">
       <participant name="SampleParticipant"/>
+      <participant name="SampleParticipant2"/>
       <output message="SampleOutputMessage"/>
       <input message="SampleInputMessage"/>
     </operation>
