@@ -21,7 +21,7 @@ jobs:
         sparse-checkout-cone-mode: false
     - name: Stage files
       id: create-artifacts
-      run: ls -al && mkdir /tmp/artifacts
+      run: ls -al && mkdir /tmp/artifacts && cp README.md /tmp/artifacts
     - name: Create Component Version
       uses: HCL-TECH-SOFTWARE/devops-deploy-createcomponentversion-action@v2.0
       with:
@@ -29,6 +29,7 @@ jobs:
         versionname: '${{ env.short_commit_id }}:${{ github.event.head_commit.message }}'
         description: 'Commit ID: ${{ github.event.head_commit.id }} Repository URL: ${{ github.repositoryUrl }}'
         link: '${{ github.server_url }}/${{ github.repository }}/commit/${{ github.event.head_commit.id }}'
+        base: /tmp/artifacts
         #hostname: '${{ secrets.DEVOPS_DEPLOY_SERVER }}'
         hostname: '169.62.212.57'
         #port: '${{ secrets.DEVOPS_DEPLOY_SERVER_PORT }}'
