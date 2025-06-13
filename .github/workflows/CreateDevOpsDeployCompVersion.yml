@@ -21,7 +21,7 @@ jobs:
         sparse-checkout-cone-mode: false
     - name: Stage files
       id: create-artifacts
-      run: ls -al && mkdir /tmp/artifacts && cp /config/business-processes/randy.bpml /tmp/artifacts
+      run: ls -al && mkdir /tmp/artifacts && cp ./config/business-processes/randy.bpml /tmp/artifacts
     - name: Create Component Version
       uses: HCL-TECH-SOFTWARE/devops-deploy-createcomponentversion-action@v2.0
       with:
