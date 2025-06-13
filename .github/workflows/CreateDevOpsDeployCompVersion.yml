@@ -13,6 +13,12 @@ jobs:
     - name: Set short_commit_id
       id: vars
       run: echo "short_commit_id=$(echo ${{ github.event.head_commit.id }} | cut -c1-7)" >> "$GITHUB_ENV"
+    - name: Fetch a single file
+      uses: actions/checkout@v4
+      with:
+        sparse-checkout: |
+          README.md
+        sparse-checkout-cone-mode: false
     - name: Create Component Version
       uses: HCL-TECH-SOFTWARE/devops-deploy-createcomponentversion-action@v2.0
       with:
