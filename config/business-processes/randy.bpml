@@ -4,6 +4,7 @@
       <participant name="SampleParticipant"/>
       <participant name="SampleParticipant2"/>
       <participant name="SampleParticipant3"/>
+      <participant name="SampleParticipant4"/>
       <output message="SampleOutputMessage"/>
       <input message="SampleInputMessage"/>
     </operation>
