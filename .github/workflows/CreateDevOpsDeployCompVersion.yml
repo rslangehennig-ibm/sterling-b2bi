@@ -31,7 +31,7 @@ jobs:
         link: '${{ github.server_url }}/${{ github.repository }}/commit/${{ github.event.head_commit.id }}'
         base: /tmp/artifacts
         #hostname: '${{ secrets.DEVOPS_DEPLOY_SERVER }}'
-        hostname: '169.62.212.57'
+        hostname: '169.54.66.181'
         #port: '${{ secrets.DEVOPS_DEPLOY_SERVER_PORT }}'
-        port: '8444'
+        port: '8443'
         authToken: '${{ secrets.DEVOPS_DEPLOY_AUTHTOKEN }}'
