@@ -4,6 +4,9 @@
       <participant name="SampleParticipant"/>
       <output message="SampleOutputMessage"/>
       <input message="SampleInputMessage"/>
+      <participant name="SampleParticipant2"/>
+      <output message="SampleOutputMessage2"/>
+      <input message="SampleInputMessage2"/>
     </operation>
   </sequence>
 </process>
