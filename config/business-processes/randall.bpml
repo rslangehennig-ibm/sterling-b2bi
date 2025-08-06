@@ -10,10 +10,5 @@
       <output message="SampleOutputMessage2"/>
       <input message="SampleInputMessage2"/>
     </operation>
-    <operation name="SampleOperation3">
-      <participant name="SampleParticipant3"/>
-      <output message="SampleOutputMessage3"/>
-      <input message="SampleInputMessage3"/>
-    </operation>
   </sequence>
 </process>
